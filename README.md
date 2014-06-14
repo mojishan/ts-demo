@@ -1,4 +1,4 @@
 ts-demo
 =======
 
-AlloyTeam ts project demo.
+AlloyTeam ts opensource project demo.
