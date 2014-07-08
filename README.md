@@ -1,4 +1,4 @@
 ts-demo
 =======
 
-AlloyTeam ts opensource project demo.
+A simple game demo base on pomelo framework.
