@@ -1,0 +1,109 @@
+body{
+	margin:0;
+	padding:0;
+	background: #000;
+	overflow: hidden;
+}
+#A1,
+#A2{
+	display: none;
+}
+/*	canvas	*/
+.canvasWrap{
+	width: 100%;
+	height: 600px;
+	overflow: hidden; 
+	position: absolute;  
+	top:50%; 
+	margin: -300px 0 0 0; -webkit-user-select: none;
+	cursor:url('game/star.cur'), pointer; 
+}
+.min-canvas{
+	position: absolute; 
+	right: 0; 
+	top: 0;
+}
+
+/*	info	*/
+.info{
+	width:350px;
+	height: 40px;
+	background: yellow;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+/*gun-list*/
+.gun-list{
+	width:210px;
+	height: 40px;
+	padding: 0;
+	margin: 0; 
+	background: white;
+	float: left;
+}
+.gun-list li{
+	height: 30px;
+	width:30px;
+	background: blue;
+	margin:5px 0 5px 10px;
+	float: left;
+	list-style-type: none;
+	opacity: 0.3;
+}
+/*	speedLevel	*/
+.speedLevel{
+	width: 140px;
+	height: 40px;
+	float: left;
+	background: green;
+	line-height: 40px;
+}
+
+/* energy-rect */
+.energy-rect{
+	height: 5px;
+	position: absolute;
+	background: rgb(26,240,67); 
+	z-index: 10;
+}
+
+/* player-name */
+.player-name-text{
+	height: 30px;
+	position: absolute;
+	z-index: 10;
+	color:white;
+	text-align: center;
+}
+/* tank-proxy-area */
+.tank-proxy-area{
+	height: 100px;
+	position: absolute;
+/*	background: red; */
+	z-index: 20;	
+	cursor: pointer;
+}
+
+/*.fps{
+	color:black;
+	font-size: 16px;
+	font-weight: bold;
+	position: absolute;
+	right: 20px;
+	bottom: 10px;
+	width: 60px;
+}
+.ping{
+
+
+}*/
+.config-data {
+	color:black;
+	font-size: 16px;
+	font-weight: bold;
+	position: absolute;	
+	right: 20px;
+	bottom: 10px;
+	width: 150px;	
+}

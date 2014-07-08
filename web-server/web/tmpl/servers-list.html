@@ -1,0 +1,8 @@
+<% for(var i=0; i<list.length; i++) { %>
+    <% var svr = list[i]; %>
+    <li data-server-id="<%= svr.id %>">
+        <h3><%= svr.id %></h3>
+        <p>房间数：<%= svr.rooms %></p>
+        <p>在线人数：<%= svr.players %></p>
+    </li>
+<% } %>

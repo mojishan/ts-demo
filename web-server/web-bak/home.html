@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="Author" content="Tencent.AlloyTeam.Jetyu, Tencent.AlloyTeam.Csonlai" />
+	<meta name="Copyright" content="Tencent.AlloyTeam" />
+	<title>TS坦克争霸 Tank Strike - AlloyTeam 2014</title>
+	<link type="text/css" rel="stylesheet" href="./style/bootstrap/css/bootstrap.css" />
+	<link type="text/css" rel="stylesheet" href="./style/home.css" />
+</head>
+<body>
+	<div id="bg">
+		<!-- 游戏主界面 -->
+		<div id="gameTitle">Tank　　Strike</div>
+		<div id="gameTitle2">坦克争霸</div>
+		<ul id="gameTitleMenu">
+			<li><a id="startButton" class="gameButton1" href="#">开始游戏</a></li>
+			<li><a id="settingButton" class="gameButton1" href="#">游戏设置</a></li>
+			<li><a id="creditsButton" class="gameButton1" href="#">游戏创作者</a></li>
+			<li><a id="aboutButton" class="gameButton1" href="#">关于游戏</a></li>
+			<li><a id="quitButton" class="gameButton1" href="#">退出</a></li>
+		</ul>
+
+		<div class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear());</script> <a href="http://www.AlloyTeam.com/" target="_blank">Tencent AlloyTeam</a>. All Rights Reserved.</div>
+
+
+
+		<!-- 登录窗口 -->
+		<div id="loginWindow" class="window">
+			<div id="loginWindowClose" class="windowClose">X</div>
+
+			<div class="windowTitle">登　录</div>
+
+			<div class="windowBody">
+				<div class="windowSubTitle">Alloy 账号</div>
+				<input id="loginAccount" type="text" value="" placeholder="Alloy 账号" title="请输入 Alloy 账号" />
+				<input id="loginPassword" type="password" placeholder="密码" value="" />
+
+
+			</div>
+
+			<div>
+				<a id="loginOK" class="gameButton2" href="#">确　定</a>
+			</div>
+
+		</div>
+
+
+
+
+
+		<!-- 关于游戏 -->
+		<div id="aboutWindow" class="window">
+			<div id="aboutWindowClose" class="windowClose">X</div>
+			<div class="windowTitle">游戏创作者</div>
+
+			<div  id="aboutWindowBody" class="windowBody">
+				<div class="windowSubTitle">Tank Strike 坦克争霸</div>
+				<div id="creditsCopyright" class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear());</script> <a href="http://www.AlloyTeam.com/" target="_blank">Tencent AlloyTeam</a>. All Rights Reserved.</div>
+				<ul class="contactInfo">
+					<li>微博：<a href="http://t.qq.com/tankstrike" target="_blank">@TankStrike</a>(腾讯)　<a href="//www.weibo.com/tankstrike" target="_blank">@TankStrike</a>(新浪)</li>
+					<li>官方网站：<a href="http://TS.AlloyTeam.com/" target="_blank">http://TS.AlloyTeam.com/</a></li>
+					<li>团队博客：<a href="http://www.AlloyTeam.com/" target="_blank">AlloyTeam.com</a></li>
+
+				</ul>
+				<p class="creditsTitle">游戏出品人</p>
+				<ul class="creditsList">
+					<li><a href="http://www.weibo.com/kinvix" target="_blank" title="不是你不能，而是你对自己要求没有那么高...">于涛 Kinvix</a></li>
+				</ul>
+				<p class="creditsTitle">创作者</p>
+				<ul class="creditsList">
+
+					<li><a href="http://www.alloyteam.com/author/azrael/" target="_blank" title="小小的天有大大的梦想">Azrael</a></li>
+					<li><a href="http://cnblogs.com/Cson/" target="_blank" title="我是小C">Csonlai</a></li>
+					<li><a href="" target="_blank" title="">Horde</a></li>
+					<li><a href="http://www.weibo.com/kinvix" target="_blank" title="不是你不能，而是你对自己要求没有那么高...">@Kinvix</a></li>
+					<li><a href="http://www.weibo.com/tgchuan" target="_blank" title="超越自己，成就未来~~">@Lightning</a></li>
+
+
+				</ul>
+				<p class="creditsTitle">出品团队</p>
+				<ul class="creditsList">
+					<li>
+						<a class="teamLogoLink" title="腾讯 Alloy 团队荣誉出品" href="http://www.alloyteam.com/" target="_blank">
+							<img class="alloyTeamLogo" src="./style/image/alloy40.png">
+							<span class="alloyTeamLogoText">腾讯 AlloyTeam</span>
+						</a>
+					</li>
+
+					<li>
+						<a class="teamLogoLink" title="HTML5 梦工场联合出品" href="http://www.html5dw.com/" target="_blank">
+							<img class="dreamworksLogo" src="./style/image/dreamworks40.png">
+							<span class="dreamworksLogoText">HTML5 梦工场</span>
+						</a>
+					</li>
+
+				</ul>
+
+
+			</div>
+
+			<div>
+				<a id="aboutOK" class="gameButton2" href="#">确　定</a>
+			</div>
+
+		</div>
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+	<!--	JX 框架	-->
+	<script out="js/jx.all.js" src="js/jx/jx.core.js"></script>
+	<script out="js/jx.all.js" src="js/jx/jx.base.js"></script>
+	<script out="js/jx.all.js" src="js/jx/jx.dom.js"></script>
+	<script out="js/jx.all.js" src="js/jx/jx.browser.js"></script>
+	<script out="js/jx.all.js" src="js/jx/jx.event.js"></script>
+	<script out="js/jx.all.js" src="js/jx/jx.http.js"></script>
+	<!--	游戏主界面	-->
+	<script type="text/javascript" src="js/lib/pomeloclient.js"></script>
+	<script type="text/javascript" src="js/lib/socket.io.js"></script>
+	<script type="text/javascript" src="js/ws.js"></script>
+	<script out="js/tankstrike.all.js" src="js/tankstrike.home.js"></script>
+
+	<!--	统计代码	-->
+	<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-23019343-9']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+	</script>
+
+</body>
+</html>

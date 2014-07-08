@@ -1,0 +1,27 @@
+// global variables
+@import "variables";
+// global functions
+@import "mixin";
+
+#view-create-room {
+    .view-inner {
+        color: #000;
+        font-size: 14px;
+    }
+
+    p {
+        margin: 10px;
+    }
+
+    label {
+        display: inline-block;
+        width: 10%;
+        text-align: right;
+    }
+
+    input {
+        height: 24px;
+        line-height: 24px;
+        width: 85%;
+    }
+}

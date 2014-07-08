@@ -1,0 +1,55 @@
+#view-login {
+  z-index: 100;
+}
+
+#view-servers-list {
+  z-index: 99;
+}
+
+#view-create-room {
+  z-index: 98;
+}
+
+#view-rooms-list {
+  z-index: 97;
+}
+
+#view-room {
+  z-index: 96;
+}
+
+.view {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+}
+
+.view-inner {
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+.view-inner h2 {
+  text-align: center;
+}
+
+.view-list,
+.view-create-room {
+  width: 800px;
+  height: 600px;
+  margin-left: -400px;
+  margin-top: -300px;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+}
+.view-list h2,
+.view-create-room h2 {
+  color: #027fa7;
+  border-bottom: 1px solid #027fa7;
+  padding-bottom: 10px;
+}

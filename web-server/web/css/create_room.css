@@ -1,0 +1,17 @@
+#view-create-room .view-inner {
+  color: #000;
+  font-size: 14px;
+}
+#view-create-room p {
+  margin: 10px;
+}
+#view-create-room label {
+  display: inline-block;
+  width: 10%;
+  text-align: right;
+}
+#view-create-room input {
+  height: 24px;
+  line-height: 24px;
+  width: 85%;
+}

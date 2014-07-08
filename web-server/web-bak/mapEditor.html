@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="Author" content="Tencent.AlloyTeam" />
+	<title>cs坦克地图编辑器</title>
+	<link type="text/css" rel="stylesheet" href="style/bootstrap/css/bootstrap.css" />
+	<link type="text/css" rel="stylesheet" href="style/mapEditor.css" />
+</head>
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<a class="brand" href="./mapEditor.html">MapEditor</a>
+		</div>
+	</div>
+	<div class="wrap">
+		<div class="itemList btn-group">
+
+			<a id="blockSelect" href="javascript:" class="btn btn-info">
+				<i class="icon-pencil icon-white"></i>
+				勾选障碍区域
+			</a>
+			<a id="openBtn" href="javascript:" class="btn btn-info">
+				<i class="icon-folder-open icon-white"></i>
+				打开
+			</a>
+			<a id="saveBtn" href="javascript:" class="btn btn-info">
+				<i class="icon-file icon-white"></i>
+				保存
+			</a>
+			<a id="create"href="javascript:" class="btn btn-warning">
+				<i class="icon-ok icon-white"></i>
+				生成代码
+			</a>
+		</div>
+
+		<div id="elStage" class="stage">
+		</div>
+		<div class="rightCol">
+			<div id="imgsArea" class="imgsArea">
+
+			</div>
+			<div class="layerMenu"><a id="addLayerBtn" href="javascript:" class="btn btn-info">添加图层</a></div>
+			<ul id="layersArea" class="layersArea"></ul>
+		</div>
+	</div>
+	<div id="newWinWrap" class="newWinWrap">
+		<div class="winBg"></div>
+		<div class="newWin">
+			<a class="closeBtn close">X</a>
+
+			<form>
+				<legend>新建图层</legend>
+		
+				<input type="text" placeholder="宽度" id="widthInput">
+		
+				<input type="text" placeholder="高度" id="heightInput">
+				<div>
+					<a class="btn btn-success layerAddBtn" id="confirm">确定</a>
+				</div>
+			</form>
+
+		</div>
+	</div>
+	<div id="codeWinWrap" class="newWinWrap">
+		<div class="winBg"></div>
+		<div class="code">
+			<a class="closeBtn close">X</a>
+			
+			<form>
+				<legend>地图代码</legend>
+				<div>
+					<textarea id="code"></textarea>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div id="saveWinWrap" class="newWinWrap">
+		<div class="winBg"></div>
+		<div class="save">
+			<a class="closeBtn close">X</a>
+			<form>
+				<legend>保存地图</legend>
+		
+				<input type="text" placeholder="地图名" id="mapName">
+				<div>
+					<a id="saveConfirmBtn" class="btn btn-success saveConfirmBtn">确定</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div id="openWinWrap" class="newWinWrap">
+		<div class="winBg"></div>
+		<div class="open">
+			<a class="closeBtn">X</a>
+			<form>
+				<legend>打开地图</legend>
+		
+				<select id="mapSelector"></select>
+				<div>
+					<a id="openConfirmBtn" class="btn btn-success saveConfirmBtn">确定</a>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<!--	JX 框架	-->
+	<script out="js/jx.all.js" src="js/jx/jx.core.js"></script>
+	<script out="js/jx.all.js" src="js/jx/jx.base.js"></script>
+	<script out="js/jx.all.js" src="js/jx/jx.dom.js"></script>
+	<script out="js/jx.all.js" src="js/jx/jx.browser.js"></script>
+	<script out="js/jx.all.js" src="js/jx/jx.event.js"></script>
+	<script out="js/jx.all.js" src="js/jx/jx.array.js"></script>
+	<script out="js/jx.all.js" src="js/jx/jx.http.js"></script>
+	<script out="js/jx.all.js" src="js/jx/jx.cookie.js"></script>
+
+	<script type="text/javascript" src="js/mapEditor/main.js"></script>
+	<script>
+		mapEditor.main.init();
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+// global variables
+@import "variables";
+// global functions
+@import "mixin";
+
+.none {
+    display: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.loading {
+    @include loading;
+}
+
+@-webkit-keyframes anim_loading {
+    0% {
+        background-position-x: 0;
+    }
+    8.33% {
+        background-position-x: -20px;
+    }
+    16.67% {
+        background-position-x: -40px;
+    }
+    25% {
+        background-position-x: -60px;
+    }
+    33.33% {
+        background-position-x: -80px;
+    }
+    41.67% {
+        background-position-x: -100px;
+    }
+    50% {
+        background-position-x: -120px;
+    }
+    58.33% {
+        background-position-x: -140px;
+    }
+    66.67% {
+        background-position-x: -160px;
+    }
+    75% {
+        background-position-x: -180px;
+    }
+    83.33% {
+        background-position-x: -200px;
+    }
+    91.67% {
+        background-position-x: -220px;
+    }
+}
+
+.btn-success {
+    @include btn-success;
+}
+
+.list {
+    @include list;
+}

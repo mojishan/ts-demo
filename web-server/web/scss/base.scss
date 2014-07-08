@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+@import "compass/css3";
+@import "compass/layout";
+
+// global variables
+@import "variables";
+// global functions
+@import "mixin";
+
+html, body, h1, h2, h3, h4, h5, h6, p, ul, li, input, button, textarea {
+    margin: 0;
+    padding: 0;
+}
+
+body, input, button, textarea {
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    font-size: $g-font-size;
+}
+
+body {
+    background-color: $g-bg-color;
+    color: $g-color-main;
+}
+
+ul, li {
+    list-style: none;
+}
+
+input {
+    @include ipt;
+}
+
+button {
+    @include btn;
+}

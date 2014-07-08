@@ -1,0 +1,40 @@
+@mixin clearfix($of: hidden) {
+    content: ' ';
+    display: block;
+    clear: both;
+    overflow: $of;
+}
+
+@mixin loading($w: 20px, $h: 20px) {
+    display: inline-block;
+    vertical-align: middle;
+    width: $w;
+    height: $h;
+    background-image: url("../img/loading.png");
+    background-size: 240px 40px;
+    background-position-x: 0;
+    background-position-y: 0;
+    -webkit-animation-name: anim_loading;
+    -webkit-animation-duration: 1600ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: step-start;
+}
+
+@mixin inline-block {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@mixin ipt($h: 30px) {
+    height: $h;
+    line-height: $h - 2px;
+    border: 0px;
+    @include inline-block;
+    padding: 4px 6px;
+    color: #555;
+    outline: none;
+}
+
+// 分离其他复杂组件
+@import "./_btn";
+@import "./_list";

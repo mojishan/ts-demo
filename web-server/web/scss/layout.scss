@@ -1,0 +1,70 @@
+// global variables
+@import "variables";
+// global functions
+@import "mixin";
+
+$zIndex: 100;
+
+@mixin set-view-size($w: 800px, $h: 600px) {
+    width: $w;
+    height: $h;
+    margin-left: -$w / 2;
+    margin-top: -$h / 2;
+}
+
+// 层级管理
+#view-login {
+    z-index: $zIndex;
+}
+
+#view-servers-list {
+    z-index: $zIndex - 1;
+}
+
+#view-create-room {
+    z-index: $zIndex - 2;
+}
+
+#view-rooms-list {
+    z-index: $zIndex - 3;
+}
+
+#view-room {
+    z-index: $zIndex - 4;
+}
+
+// 每个view都有一个占满满屏的透明层
+// 目的是分离各个view，是它们不要彼此穿透
+.view {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.view-inner {
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    h2 {
+        text-align: center;
+    }
+}
+
+.view-list,
+.view-create-room {
+    @include set-view-size;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+
+    h2 {
+        color: $g-color-secondary;
+        border-bottom: 1px solid $g-color-secondary;
+        padding-bottom: 10px;
+    }
+}

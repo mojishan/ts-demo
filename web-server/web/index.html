@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>tank demo</title>
+    <!-- build:css /css/ts.min.css -->
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/common.css" />
+    <link rel="stylesheet" href="/css/layout.css" />
+    <link rel="stylesheet" href="/css/login.css" />
+    <link rel="stylesheet" href="/css/servers.css" />
+    <link rel="stylesheet" href="/css/rooms.css" />
+    <link rel="stylesheet" href="/css/create_room.css" />
+    <link rel="stylesheet" href="/css/room.css" />
+    <!-- endbuild -->
+</head>
+
+<body>
+    <section class="view none" id="view-login">
+        <form class="view-inner">
+            <h2>玩家登录</h2>
+            <p>
+                <label for="name">用户名：</label>
+                <input id="name" name="name" placehoder="用户名" />
+            </p>
+            <p>
+                <label for="passwd">用户密码：</label>
+                <input type="password" name="password" id="passwd" placehoder="用户密码" />
+            </p>
+            <p>
+                <button type="submit" class="btn-success">登录</button>
+            </p>
+        </form>
+    </section>
+
+    <section class="view none" id="view-servers-list">
+        <div class="view-inner view-list">
+            <h2>分区列表</h2>
+            <ul class="list"></ul>
+        </div>
+    </section>
+
+    <section class="view none" id="view-rooms-list">
+        <div class="view-inner view-list">
+            <h2>房间列表</h2>
+            <ul class="list"></ul>
+        </div>
+    </section>
+
+    <section class="view none" id="view-create-room">
+        <div class="view-inner view-create-room">
+            <h2>创建房间</h2>
+            <p>
+                <label for="new-room-name">房间名：</label>
+                <input id="new-room-name" />
+            </p>
+            <p>
+                <label for="new-room-passwd">房间密码：</label>
+                <input id="new-room-passwd" type="password" />
+            </p>
+            <p>
+                <button id="new-room-submit">创建</button>
+            </p>
+        </div>
+    </section>
+
+    <!-- game main area -->
+    <section class="view none" id="view-room">
+        <div class="battleground">
+            <div class="tank green"></div>
+            <div class="tank red"></div>
+        </div>
+    </section>
+
+    <script src="//s.url.cn/pub/jquery/2.1.1/jquery.min.js"></script>
+    <script src="/js/lib/socket.io.js"></script>
+    <script src="/js/lib/pomeloclient.js"></script>
+    <!-- <script src="/js/lib/jquery.min.js"></script>
+    <script src="js/lib/pomelo/build/build.js"></script>
+    <script>require('boot');</script> -->
+
+    <!-- <script data-main="/js/main.js" src="//s.url.cn/pub/requirejs/2.1.13/require.min.js"></script> -->
+    <script data-main="/js/main.js" src="js/lib/require.min.js"></script>
+</body>
+</html>
